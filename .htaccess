@@ -6,13 +6,13 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /proyectos_playgroup/depsa/depsa-admin/
+RewriteBase /Proyectos_PlayGroup/depsa/depsa-admin/
 RewriteRule ^index\.php$ - [L]
-RewriteRule ^en/wp-login.php /proyectos_playgroup/depsa/depsa-admin/wp-login.php [QSA,L]
-RewriteRule ^es/wp-login.php /proyectos_playgroup/depsa/depsa-admin/wp-login.php [QSA,L]
+RewriteRule ^en/wp-login.php /Proyectos_PlayGroup/depsa/depsa-admin/wp-login.php [QSA,L]
+RewriteRule ^es/wp-login.php /Proyectos_PlayGroup/depsa/depsa-admin/wp-login.php [QSA,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /proyectos_playgroup/depsa/depsa-admin/index.php [L]
+RewriteRule . /Proyectos_PlayGroup/depsa/depsa-admin/index.php [L]
 </IfModule>
 
 # END WordPress
